@@ -1,0 +1,36 @@
+.question {
+  text-align: center;
+  color: #3b3f6a;
+  font-size: 3rem;
+  font-family: 'Arvo', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 13rem;
+  height: 10rem;
+  margin-top: 5rem;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  
+}
+
+p {
+  text-align: center;
+}
+
+.first {
+  margin-top: 3rem;
+  color: #3b3f6a;
+  font-size: 1.7rem;
+}
+
+.second {
+  color: #686c8a;
+  font-size: 1.2rem
+}
+
