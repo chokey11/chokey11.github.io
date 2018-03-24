@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CSS/style.css">
+	<title>jquery</title>
+</head>
+<body>
+	<script src="JS/jquery-1.12.4.js"></script>
+	<script>
+	(function($) {
+    $(document).ready(function() {
+        var $panel = $('#panel');
+        if ($panel.length) {
+            var $sticker = $panel.children('#panel-sticker');
+            var showPanel = function() {
+                $panel.animate({
+                    left: '+=400',
+                }, 200, function() {
+                    $(this).addClass('visible');
+                });
+            };
+            var hidePanel = function() {
+                $panel.animate({
+                    left: '-=400',
+                }, 200, function() {
+                    $(this).removeClass('visible');
+                });
+            };
+            $sticker
+                .children('span').click(function() {
+                    if ($panel.hasClass('visible')) {
+                        hidePanel();
+                    }
+                    else {
+                        showPanel();
+                    }
+                }).mouseenter(function() {
+                    if (!$panel.hasClass('visible')) {
+                        showPanel();
+                    }
+                }).andSelf()
+                .children('.close').click(function() {
+                    $panel.remove();
+                });
+        }
+    });
+})(jQuery);
+</script>
+<div id="panel">
+    <div id="panel-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis harum placeat iste incidunt hic ea nostrum, voluptas qui veritatis, quod amet sequi praesentium recusandae nesciunt q
+    </div>
+    <div id="panel-sticker">
+        <span>Скрыть</span>
+        <div class="close">×</div>    
+    </div>
+</div>
+</body>
+</html>
