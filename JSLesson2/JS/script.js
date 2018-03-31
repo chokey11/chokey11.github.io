@@ -1,11 +1,6 @@
-var n = prompt ("number", "33721")
-var s = 1
+var num = "33721";
+Numb = (num[0] * num[1] * num[2] * num[3] * num[4]);
 
-while (n > 0)
-{
- s *= n % 10
- n = Math.floor(n/10)
-}
+console.log(Numb**3);
 
-console.log("result: " + s);
-alert (s*s*s);
+alert(Numb**3);
