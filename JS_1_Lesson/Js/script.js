@@ -11,7 +11,7 @@ var shopName = prompt("Название вашего магазина?");
 
 for (let i = 0; i < 3; i++) {
 
-	let a = prompt ("Какой")
+	let a = prompt ("Какой тип товаров будем продавать?")
 
 	{
 		mainList.shopGoods[i] = a;
