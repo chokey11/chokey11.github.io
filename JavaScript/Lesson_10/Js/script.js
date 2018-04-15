@@ -1,9 +1,9 @@
 class options {
 	constructor(height, width, bg, fontSize, textAlign) {
-			this.height = '500px',
-			this.width = '1000px',
-			this.bg = 'red',
-			this.fontSize = '22px',
+			this.height = '600px',
+			this.width = '800px',
+			this.bg = 'purple',
+			this.fontSize = '25px',
 			this.textAlign = 'center'
 	} 
 
@@ -22,6 +22,7 @@ class options {
 let task = new options;
 
 task.createDiv();
+
 
 
 
